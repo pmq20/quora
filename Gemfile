@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
-gem 'rails', '3.0.5'
+gem 'rails', '4.0.0'
 
 # MongoDB
 gem "mongoid", "2.0.0"
 gem "bson", "1.2.4"
 gem "bson_ext", "1.2.4"
-gem 'mongo-rails-instrumentation', "0.2.0"
+gem 'mongo-rails-instrumentation', '0.2.1'
 gem "mongoid-eager-loading","0.3.1"
-gem "mongoid_rails_migrations", "0.0.10"
+gem "mongoid_rails_migrations", "0.0.11"
 gem "cells","3.6.5"
 gem "dalli","1.1.2"
 
@@ -23,7 +23,7 @@ gem 'rmmseg-cpp-huacnlee', '0.2.9'
 # 用户系统
 gem 'devise', '1.2.rc2'
 # 邀请系统
-gem 'devise_invitable', '0.4.rc5'
+gem 'devise_invitable', '1.0.3'
 
 # 图片上传
 gem 'carrierwave', "0.5.3"
