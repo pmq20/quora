@@ -1,14 +1,14 @@
 source 'http://rubygems.org'
-gem 'rails', '3.0.5'
+gem 'rails', '5.0.0'
 
 # MongoDB
 gem "mongoid", "2.0.0"
 gem "bson", "1.2.4"
 gem "bson_ext", "1.2.4"
-gem 'mongo-rails-instrumentation', "0.2.0"
+gem 'mongo-rails-instrumentation', '0.2.1'
 gem "mongoid-eager-loading","0.3.1"
-gem "mongoid_rails_migrations", "0.0.10"
-gem "cells","3.6.5"
+gem "mongoid_rails_migrations", "0.0.11"
+gem "cells", "3.8.7"
 gem "dalli","1.1.2"
 
 gem "redis", "2.1.1"
@@ -21,9 +21,9 @@ gem 'chinese_pinyin', '0.3.0'
 gem 'rmmseg-cpp-huacnlee', '0.2.9'
 
 # 用户系统
-gem 'devise', '1.2.rc2'
+gem 'devise', '1.2.0'
 # 邀请系统
-gem 'devise_invitable', '0.4.rc5'
+gem 'devise_invitable', '1.0.3'
 
 # 图片上传
 gem 'carrierwave', "0.5.3"
@@ -34,8 +34,8 @@ gem 'will_paginate', '3.0.pre'
 gem 'memcache-client', '1.8.5'
 
 # OAuth
-gem 'omniauth', '0.2.0'
-gem "oa-openid", '0.2.0'
+gem 'omniauth', '0.3.0'
+gem "oa-openid", "0.2.4"
 gem "omniauth_china", "0.0.6"
 
 # 后台列表
@@ -65,7 +65,7 @@ gem 'whenever', '0.6.2'
 gem "aws-ses", "0.4.2", :require => 'aws/ses'
 
 # Background Jobs
-gem "resque", '1.15.0', :require => "resque/server"
+gem "resque", "1.15.0", :require => "resque/server"
 gem "resque_mailer", '1.0.1'
 
 # Comet
@@ -78,16 +78,16 @@ gem "redis-search", "0.6.1"
 
 group :development do
 	gem 'rails-dev-boost-beta','0.1.2', :require => 'rails_development_boost'
-  gem "rspec-rails", "~> 2.6"
+  gem "rspec-rails", "~> 2.8", ">= 2.8.1"
   gem 'pry'
 end
 
 
 group :test do
-  gem "rspec-rails", "~> 2.6"
+  gem "rspec-rails", "~> 2.8", ">= 2.8.1"
   gem 'turn', :require => false
-  gem "factory_girl_rails", "~> 1.2"
-  gem 'capybara'
+  gem "factory_girl_rails", "~> 1.6", ">= 1.6.0"
+  gem 'capybara', '>= 1.1.2'
   gem 'guard-rspec'
   gem 'pry'
   gem 'ruby-debug19', :require => 'ruby-debug'
